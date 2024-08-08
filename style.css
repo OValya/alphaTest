@@ -1,6 +1,49 @@
+@import './styles/typo.css';
+
+:root {
+    --primary-color: #f5f5f5;
+    --secondary-color: #f5f5f5;
+    --text-color: #fff;
+}
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: var(--text-color);
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background: url('/fon_mob_CRM.webp') no-repeat 0 0/cover;
+}
+
+.flex-sb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breadcrumbs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.proposal{
+  background: url("line.webp") no-repeat 0 0/cover;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
