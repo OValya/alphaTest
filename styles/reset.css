@@ -11,6 +11,7 @@
 
 a, a:link, a:visited, a:hover  {
     text-decoration: none;
+    color: #fff;
 }
 
 ul, ul li {

@@ -1,5 +1,6 @@
 @import './styles/typo.css';
 @import "./styles/reset.css";
+@import './styles/header.css';
 
 :root {
     --primary-color: #f5f5f5;
@@ -22,25 +23,45 @@ button{
   font-style: normal;
 }
 
-.container{
+.pagecrm-container{
   max-width: 360px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.pagecrm{
   background: url('/fon_mob_CRM.webp') no-repeat 0 0/cover;
+  min-width: 320px;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-.flex-sb{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.breadcrumbs{
+.pagecrm-breadcrumbs{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
+  column-gap: 10px;
+  font-size: 12px;
+  padding: 12px 10px;
+  a{
+    position: relative;
+
+    cursor: pointer;
+  }
+  a:not(:first-child){
+    padding-left: 20px;
+  }
+  a:not(:first-child):before{
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 12px;
+    width: 6px;
+    height: 8px;
+  }
 }
+
 
 main{
   display: flex;

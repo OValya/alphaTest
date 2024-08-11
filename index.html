@@ -1,110 +1,200 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CRM</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="flex-sb">
-          <img src="logo.svg" alt="logo" />
-          <p>8 812 409-52-22</p>
+</head>
+<body class="pagecrm">
+<!--    <div class="pagecrm-container">-->
+<header class="pagecrm-header">
+    <div class="pagecrm-header__top">
+        <a href="/" class="pagecrm-logo">
+            <img src="logo.svg" alt="logo" width="102"/>
+        </a>
+        <nav class="pagecrm-nav">
+            <ul>
+                <li><a href="/">Услуги</a></li>
+                <li><a href="/">Кейсы</a></li>
+                <li><a href="/">Ещё</a></li>
+            </ul>
+        </nav>
+        <p>8 812 409-52-22</p>
+        <button class="pagecrm-btn">Задать вопрос</button>
+    </div>
+    <div class="pagecrm-header__bottom">
+
+        <div class="pagecrm-burger">
+            <span></span>
         </div>
-        <div class="flex-sb">
-          <p>menu</p>
-          <input />
+        <div class="pagecrm-search">
+            <input class="pagecrm-search__input" placeholder="Поиск"/>
         </div>
-        <div class="breadcrumbs">
-          <p>Главная</p>
-          <p>Услуги Альфа Маркетинг</p>
-          <p>CRM</p>
+
+
+    </div>
+
+
+</header>
+<div class="pagecrm-breadcrumbs">
+    <a href="/">
+        <span>Главная</span>
+    </a>
+    <a href="#"><span>Услуги Альфа Маркетинг</span></a>
+    <a href="#">
+        <span>CRM</span>
+    </a>
+
+</div>
+<main class="main">
+    <section class="proposal section-layout">
+        <p class="title">CRM</p>
+        <img src="crm.webp" alt="crm benefits image" width="300" height="297">
+        <button class="neon-btn blur">Оставить заявку</button>
+    </section>
+    <section class="management">
+        <h1>Управление бизнес-процессами</h1>
+        <div class="grid-2x2">
+            <div class="card-1">
+                <img src="users.svg" alt="" width="100" height="100">
+                <p class="subtitle">
+                    Удобное общениe с заказчиками
+                </p>
+            </div>
+            <div class="card-1">
+                <img src="users.svg" alt="" width="100" height="100">
+                <p class="subtitle">
+                    Лучшие CRM-системы
+                </p>
+            </div>
+            <div class="card-1">
+                <img src="rocket.svg" alt="" width="100" height="100">
+                <p class="subtitle">
+                    Повышение эффективности отдела продаж
+                </p>
+            </div>
+            <div class="card-1">
+                <img src="card.svg" alt="" width="100" height="100">
+                <p class="subtitle">
+                    Карточка с историей событий для каждого заказчика
+                </p>
+            </div>
         </div>
-      </header>
-      <main class="main">
-        <section class="proposal section-layout">
-          <p class="title">CRM</p>
-          <img src="crm.webp" alt="crm benefits image" width="300" height="297">
-          <button class="neon-btn blur">Оставить заявку</button>
-        </section>
-        <section class="management">
-          <h1>Управление бизнес-процессами</h1>
-          <div class="grid-2x2">
-            <div class="card-1">
-              <img src="users.svg" alt="" width="100" height="100">
-              <p class="subtitle">
-                Удобное общениe с заказчиками
-              </p>
-            </div>
-            <div class="card-1">
-              <img src="users.svg" alt="" width="100" height="100">
-              <p class="subtitle">
-                Лучшие CRM-системы
-              </p>
-            </div>
-            <div class="card-1">
-              <img src="rocket.svg" alt="" width="100" height="100">
-              <p class="subtitle">
-                Повышение эффективности отдела продаж
-              </p>
-            </div>
-            <div class="card-1">
-              <img src="card.svg" alt="" width="100" height="100">
-              <p class="subtitle">
-                Карточка с историей событий для каждого заказчика
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="example section-layout">
-          <div class="card-2 blur">
+    </section>
+    <section class="example section-layout">
+        <div class="card-2 blur">
             <img src="amo.webp" alt="amoCRM image">
             <ul>
-              Функции:
-              <li>CRM</li>
-              <li>Интеграция с другими сервисами</li>
-              <li>Онлайн-бот</li>
+                Функции:
+                <li>CRM</li>
+                <li>Интеграция с другими сервисами</li>
+                <li>Онлайн-бот</li>
             </ul>
-          </div>
-          <div class="card-2 blur">
+        </div>
+        <div class="card-2 blur">
             <img src="bitrix.webp" alt="bitrix image">
             <ul>
-              Функции:
-              <li>CRM</li>
-              <li>Корпоративный портал</li>
-              <li>Онлайн офис</li>
-              <li>Интеграция с другими сервисами и т.д.</li>
+                Функции:
+                <li>CRM</li>
+                <li>Корпоративный портал</li>
+                <li>Онлайн офис</li>
+                <li>Интеграция с другими сервисами и т.д.</li>
             </ul>
-          </div>
+        </div>
 
-        </section>
-        <section class="form-section">
-          <form action="submit" class="form section-layout">
+    </section>
+    <section class="form-section">
+        <form action="submit" class="form section-layout">
             <h1>Оставить заявку</h1>
             <p>Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
             <input type="text" placeholder="ФИО">
             <input type="text" placeholder="Телефон">
             <select name="service">
-              <option value="1">Услуга 1</option>
-              <option value="2">Услуга 2</option>
-              <option value="3">Услуга 3</option>
+                <option value="1">Услуга 1</option>
+                <option value="2">Услуга 2</option>
+                <option value="3">Услуга 3</option>
             </select>
             <input type="text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"/>
             <button class="dark-btn">Оставить заявку</button>
-          </form>
-        </section>
-        <section class="for-users"></section>
-        <section class="crm-for-business"></section>
-        <section class="cost"></section>
-        <section class="contacts"></section>
-      </main>
-      <footer class="footer"></footer>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+        </form>
+    </section>
+    <section class="pagecrm-helpfully">
+        <h2>КОМУ ПОЛЕЗНА CRM</h2>
+        <ul class="pagecrm-helpfully__list">
+            <li class="pagecrm-helpfully__item">
+                <p class="pagecrm-helpfully__text"> Любому бизнесу, работающему с клиентской базой </p>
+            </li>
+            <li class="pagecrm-helpfully__item">
+                <p class="pagecrm-helpfully__text">На компьютер, подключите гарнитуру и звоните прямо из CRM одним
+                    кликом</p>
+            </li>
+            <li class="pagecrm-helpfully__item">
+                <p class="pagecrm-helpfully__text">На компьютер, подключите гарнитуру и звоните прямо из CRM одним
+                    кликом</p>
+            </li>
+        </ul>
+    </section>
+    <section class="crm-for-business section-layout">
+        <h2>CRM для бизнеса</h2>
+        <p class="subtitle">Наши кейсы</p>
+        <div class="card case">
+            <div>
+                <img src="./public/case1.webp" alt="case1 image">
+                <p>г. Санкт-Петербург</p>
+            </div>
+
+            <p class="subtitle">“Пестовский Лесокомбинат”</p>
+            <p>Строительная компания</p>
+            <p class="overlay-text">Работают на платформе amoCRM</p>
+        </div>
+        <div class="card case">
+            <div>
+                <img src="./public/case1.webp" alt="case2 image">
+                <p>г. Санкт-Петербург</p>
+            </div>
+            <p class="subtitle">Магазин “Mongol Store”</p>
+            <p>Одежда из натуральной шерсти</p>
+            <p class="overlay-text">Используют БитриксCRM</p>
+        </div>
+
+
+    </section>
+    <section class="cost"></section>
+    <section class="form-section-2">
+        <h1>Заявка на подбор и подключение CRM-системы </h1>
+        <p class="subtitle">Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость </p>
+        <form action="submit" class="form section-layout">
+            <h1>Оставить заявку</h1>
+            <p>Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
+            <input type="text" placeholder="ФИО">
+            <input type="text" placeholder="Телефон">
+            <select name="service">
+                <option value="1">Услуга 1</option>
+                <option value="2">Услуга 2</option>
+                <option value="3">Услуга 3</option>
+            </select>
+            <input type="text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"/>
+            <button class="dark-btn">Оставить заявку</button>
+        </form>
+    </section>
+    <section class="partners section-layout">
+        <h2>НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
+        <img src="all_crm.webp" alt="partners image" width="340">
+        <ul>
+            <li>Битрикс24 (Управление бизнесом)</li>
+            <li>amoCRM (Управление бизнесом)</li>
+
+        </ul>
+
+    </section>
+    <section class="contacts"></section>
+</main>
+<footer class="footer"></footer>
+<!--    </div>-->
+<script type="module" src="/main.js"></script>
+</body>
 </html>
