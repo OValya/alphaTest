@@ -51,78 +51,93 @@
 
 </div>
 <main class="main">
-    <section class="proposal section-layout">
-        <p class="title">CRM</p>
-        <img src="crm.webp" alt="crm benefits image" width="300" height="297">
-        <button class="neon-btn blur">Оставить заявку</button>
-    </section>
-    <section class="management">
-        <h1>Управление бизнес-процессами</h1>
-        <div class="grid-2x2">
-            <div class="card-1">
-                <img src="users.svg" alt="" width="100" height="100">
-                <p class="subtitle">
-                    Удобное общениe с заказчиками
-                </p>
-            </div>
-            <div class="card-1">
-                <img src="users.svg" alt="" width="100" height="100">
-                <p class="subtitle">
-                    Лучшие CRM-системы
-                </p>
-            </div>
-            <div class="card-1">
-                <img src="rocket.svg" alt="" width="100" height="100">
-                <p class="subtitle">
-                    Повышение эффективности отдела продаж
-                </p>
-            </div>
-            <div class="card-1">
-                <img src="card.svg" alt="" width="100" height="100">
-                <p class="subtitle">
-                    Карточка с историей событий для каждого заказчика
-                </p>
-            </div>
+    <section class="pagecrm-proposal ">
+        <div class="pagecrm-section-layout">
+            <p class="title">CRM</p>
+            <img src="crm.webp" alt="crm benefits image" width="300" height="297">
+            <button class="neon-btn blur">Оставить заявку</button>
         </div>
     </section>
-    <section class="example section-layout">
-        <div class="card-2 blur">
-            <img src="amo.webp" alt="amoCRM image">
-            <ul>
-                Функции:
-                <li>CRM</li>
-                <li>Интеграция с другими сервисами</li>
-                <li>Онлайн-бот</li>
-            </ul>
-        </div>
-        <div class="card-2 blur">
-            <img src="bitrix.webp" alt="bitrix image">
-            <ul>
-                Функции:
-                <li>CRM</li>
-                <li>Корпоративный портал</li>
-                <li>Онлайн офис</li>
-                <li>Интеграция с другими сервисами и т.д.</li>
-            </ul>
+    <section class="pagecrm-management">
+        <div class="pagecrm-section-layout">
+            <h1>Управление бизнес-процессами</h1>
+            <div class="grid-2x2">
+                <div class="pagecrm-card-1">
+                    <img src="./public/earphone.svg" alt="communication picture" width="100" height="100">
+                    <p class="subtitle">
+                        Удобное общениe с заказчиками
+                    </p>
+                </div>
+                <div class="pagecrm-card-1">
+                    <img src="users.svg" alt="best crm image" width="100" height="100">
+                    <p class="subtitle">
+                        Лучшие CRM-системы
+                    </p>
+                </div>
+                <div class="pagecrm-card-1">
+                    <img src="rocket.svg" alt="increase sales image" width="100" height="100">
+                    <p class="subtitle">
+                        Повышение эффективности отдела продаж
+                    </p>
+                </div>
+                <div class="pagecrm-card-1">
+                    <img src="card.svg" alt="user card image" width="100" height="100">
+                    <p class="subtitle">
+                        Карточка с историей событий для каждого заказчика
+                    </p>
+                </div>
+            </div>
         </div>
 
     </section>
-    <section class="form-section">
-        <form action="submit" class="form section-layout">
-            <h1>Оставить заявку</h1>
-            <p>Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
-            <input type="text" placeholder="ФИО">
-            <input type="text" placeholder="Телефон">
-            <select name="service">
-                <option value="1">Услуга 1</option>
-                <option value="2">Услуга 2</option>
-                <option value="3">Услуга 3</option>
-            </select>
-            <input type="text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"/>
-            <button class="dark-btn">Оставить заявку</button>
-        </form>
+    <section class="pagecrm-example">
+        <div class="pagecrm-section-layout pagecrm-section-desktop">
+            <div class="pagecrm-card-2 pagecrm-blur">
+                <img src="amo.webp" alt="amoCRM image">
+                <div class="pagecrm-card-2-content">
+                    <p class="subtitle">Функции:</p>
+                    <ul class="pagecrm-card-2-list">
+                        <li class="pagecrm-card-2-list__item">CRM</li>
+                        <li class="pagecrm-card-2-list__item">Интеграция с другими сервисами</li>
+                        <li class="pagecrm-card-2-list__item">Онлайн-бот</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="pagecrm-card-2 pagecrm-blur">
+                <img src="bitrix.webp" alt="bitrix image">
+                <ul class="pagecrm-card-2-list">
+                    Функции:
+                    <li class="pagecrm-card-2-list__item">CRM</li>
+                    <li class="pagecrm-card-2-list__item">Корпоративный портал</li>
+                    <li class="pagecrm-card-2-list__item">Онлайн офис</li>
+                    <li class="pagecrm-card-2-list__item">Интеграция с другими сервисами и т.д.</li>
+                </ul>
+            </div>
+        </div>
+
+
     </section>
-    <section class="pagecrm-helpfully">
+    <section class="pagecrm-form-section">
+        <div class="pagecrm-form-section-layout">
+            <form action="submit" class="pagecrm-form pagecrm-section-layout">
+                <h1>Оставить заявку</h1>
+                <p>Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
+                <input type="text" placeholder="ФИО">
+                <input type="text" placeholder="Телефон">
+                <select name="service">
+                    <option value="1">Услуга 1</option>
+                    <option value="2">Услуга 2</option>
+                    <option value="3">Услуга 3</option>
+                </select>
+                <input type="text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"/>
+                <button class="dark-btn">Оставить заявку</button>
+            </form>
+        </div>
+
+    </section>
+    <section class="pagecrm-helpfully pagecrm-section-layout">
         <h2>КОМУ ПОЛЕЗНА CRM</h2>
         <ul class="pagecrm-helpfully__list">
             <li class="pagecrm-helpfully__item">

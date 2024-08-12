@@ -1,0 +1,54 @@
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 980px) {
+    .pagecrm-burger{
+        display: none;
+    }
+    .pagecrm-nav,
+    .pagecrm-btn{
+        display: block;
+    }
+
+    .pagecrm-example .pagecrm-section-desktop{
+
+            display: flex;
+            flex-direction: row;
+        column-gap: 20px;
+            /*align-items: center;*/
+            /*row-gap: 20px;*/
+            /*padding: 0 10px;*/
+
+    }
+
+    .pagecrm-card-2{
+        /*width: 100%;*/
+        border-radius: 20px;
+        /*background: linear-gradient(#480572, #480572) padding-box, linear-gradient(#9400FF, rgba(198, 79, 135, 0.83)) border-box;*/
+        /*border: 1px solid transparent;*/
+
+        img{
+            /*position: relative;*/
+            width: 390px;
+            /*float: left;*/
+            margin-right: 20px;
+        }
+        ul{
+            padding: 20px;
+            li{
+                padding-top: 20px;
+                font-size: 20px;
+                line-height: 20px;
+
+                &:before{
+                    /*content: url("check.svg");*/
+                    width: 28px;
+                    height: 28px;
+                    /*padding-right: 20px;*/
+                }
+            }
+        }
+    }
+}
+
