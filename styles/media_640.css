@@ -23,17 +23,6 @@
     }
 
     .pagecrm-card-2{
-        /*width: 100%;*/
-        border-radius: 20px;
-        /*background: linear-gradient(#480572, #480572) padding-box, linear-gradient(#9400FF, rgba(198, 79, 135, 0.83)) border-box;*/
-        /*border: 1px solid transparent;*/
-
-        img{
-            /*position: relative;*/
-            width: 390px;
-            /*float: left;*/
-            margin-right: 20px;
-        }
         ul{
             padding: 20px;
             li{
@@ -49,6 +38,21 @@
                 }
             }
         }
+        /*width: 100%;*/
+        border-radius: 20px;
+        /*background: linear-gradient(#480572, #480572) padding-box, linear-gradient(#9400FF, rgba(198, 79, 135, 0.83)) border-box;*/
+        /*border: 1px solid transparent;*/
+
+
     }
+}
+
+.pagecrm-card-2__content{
+
+}
+
+.pagecrm-card-2__img{
+    width: 390px;
+    margin-right: 20px;
 }
 

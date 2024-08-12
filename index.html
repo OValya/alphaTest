@@ -93,8 +93,8 @@
     <section class="pagecrm-example">
         <div class="pagecrm-section-layout pagecrm-section-desktop">
             <div class="pagecrm-card-2 pagecrm-blur">
-                <img src="amo.webp" alt="amoCRM image">
-                <div class="pagecrm-card-2-content">
+                <img class="pagecrm-card-2__img" src="amo.webp" alt="amoCRM image">
+                <div class="pagecrm-card-2__content">
                     <p class="subtitle">Функции:</p>
                     <ul class="pagecrm-card-2-list">
                         <li class="pagecrm-card-2-list__item">CRM</li>
@@ -106,14 +106,16 @@
 
             </div>
             <div class="pagecrm-card-2 pagecrm-blur">
-                <img src="bitrix.webp" alt="bitrix image">
-                <ul class="pagecrm-card-2-list">
-                    Функции:
-                    <li class="pagecrm-card-2-list__item">CRM</li>
-                    <li class="pagecrm-card-2-list__item">Корпоративный портал</li>
-                    <li class="pagecrm-card-2-list__item">Онлайн офис</li>
-                    <li class="pagecrm-card-2-list__item">Интеграция с другими сервисами и т.д.</li>
-                </ul>
+                <img class="pagecrm-card-2__img" src="bitrix.webp" alt="bitrix image">
+                <div class="pagecrm-card-2__content">
+                    <p class="subtitle">Функции:</p>
+                    <ul class="pagecrm-card-2-list">
+                        <li class="pagecrm-card-2-list__item">CRM</li>
+                        <li class="pagecrm-card-2-list__item">Корпоративный портал</li>
+                        <li class="pagecrm-card-2-list__item">Онлайн офис</li>
+                        <li class="pagecrm-card-2-list__item">Интеграция с другими сервисами и т.д.</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -153,32 +155,73 @@
             </li>
         </ul>
     </section>
-    <section class="crm-for-business section-layout">
+    <section class="pagecrm-section-cases pagecrm-section-layout">
         <h2>CRM для бизнеса</h2>
         <p class="subtitle">Наши кейсы</p>
-        <div class="card case">
-            <div>
-                <img src="./public/case1.webp" alt="case1 image">
+        <div class="pagecrm-card-2 pagecrm-blur">
+            <div class="pagecrm-img-container">
+                <img src="case1.webp" alt="case1 image">
                 <p>г. Санкт-Петербург</p>
             </div>
 
             <p class="subtitle">“Пестовский Лесокомбинат”</p>
             <p>Строительная компания</p>
             <p class="overlay-text">Работают на платформе amoCRM</p>
+            <button class="dark-btn">Подробнее</button>
         </div>
-        <div class="card case">
-            <div>
-                <img src="./public/case1.webp" alt="case2 image">
-                <p>г. Санкт-Петербург</p>
+        <div class="pagecrm-card-2 pagecrm-blur">
+            <div class="pagecrm-img-container">
+                <img src= "case1.webp" alt="case2 image">
+                <p>Россия</p>
             </div>
             <p class="subtitle">Магазин “Mongol Store”</p>
             <p>Одежда из натуральной шерсти</p>
             <p class="overlay-text">Используют БитриксCRM</p>
+            <button class="dark-btn">Подробнее</button>
         </div>
 
 
     </section>
-    <section class="cost"></section>
+    <section class="pagecrm-section-cost pagecrm-section-layout">
+        <h2>СТОИМОСТЬ ПОДКЛЮЧЕНИЯ</h2>
+        <div class="pagecrm-cost-container">
+            <div class="pagecrm-cost-card pagecrm-blur">
+                <div class="pagecrm-cost-card__price">
+                    <p class="pagecrm-cost-card__title">Подключение системы CRM</p>
+                    <h2 class="pagecrm-cost-card__text">от 10000 р</h2>
+                </div>
+                <ul class="pagecrm-card-2-list ">
+                    <li class="pagecrm-card-2-list__item">Покупка любого тарифа со скидкой</li>
+                </ul>
+                <button class="dark-btn">Заказать</button>
+            </div>
+
+            <div class="pagecrm-cost-card pagecrm-blur">
+                <div class="pagecrm-cost-card__price">
+                    <p class="pagecrm-cost-card__title">Подключение системы CRM + настройка</p>
+                    <h2 class="pagecrm-cost-card__text">от 15000 р</h2>
+                </div>
+                <ul class="pagecrm-card-2-list">
+                    <li class="pagecrm-card-2-list__item">Покупка любого тарифа со скидкой</li>
+                    <li class="pagecrm-card-2-list__item">Индивидуальная настройка системы</li>
+                </ul>
+                <button class="dark-btn">Заказать</button>
+            </div>
+
+            <div class="pagecrm-cost-card pagecrm-blur ">
+                <div class="pagecrm-cost-card__price">
+                    <p class="pagecrm-cost-card__title">Продление лицензий amoCRM и Битрикс24</p>
+                    <h2 class="pagecrm-cost-card__text">от 10000 р</h2>
+                </div>
+                <ul class="pagecrm-card-2-list">
+                    <li class="pagecrm-card-2-list__item">Возможность продления лицензий со скидкой от официальных цен</li>
+                </ul>
+                <button class="dark-btn">Заказать</button>
+            </div>
+        </div>
+
+
+    </section>
     <section class="form-section-2">
         <h1>Заявка на подбор и подключение CRM-системы </h1>
         <p class="subtitle">Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость </p>
