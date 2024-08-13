@@ -77,6 +77,46 @@ main {
     padding: 35px 0;
 }
 
+.pagecrm-fixed-block{
+    position: fixed;
+    right :0;
+    top: 220px;
+    height: 94px;
+    width: 48px;
+    background: rgba(29, 1, 65, 0.3);
+    padding: 13px 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content : space-between;
+    align-items: center ;
+}
+.pagecrm-fixed-block:after{
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 3px;
+    width: 90%;
+    height: 1px;
+
+    background: #ECECEC;
+}
+
+.pagecrm-btn-phone,
+.pagecrm-btn-question{
+    width:38px;
+    padding: 5px;
+    height:100%;
+    /*border-bottom: 1px solid blue;*/
+    background:url('./public/phone.svg') center 0px/ 20px 30px no-repeat;
+    filter: drop-shadow(0px 0px 10.6176px #00FFE1) drop-shadow(0px 0px 3.0336px #00FFE1) drop-shadow(0px 0px 1.5168px #00FFE1);
+}
+
+.pagecrm-btn-question{
+    background:url('./public/question.svg') center bottom/ 20px 30px no-repeat;
+}
+
 .pagecrm-proposal {
     background: url("line.webp") no-repeat -100px 0/cover;
 }
