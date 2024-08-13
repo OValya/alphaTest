@@ -1,6 +1,7 @@
 @import './styles/typo.css';
 @import "./styles/reset.css";
 @import './styles/header.css';
+@import './styles/footer.css';
 /*@import './styles/media_640.css';*/
 
 
@@ -38,6 +39,7 @@ button {
     width: 100%;
     overflow-x: hidden;
     margin: 0 auto;
+    padding-bottom:75px ;
 }
 
 .pagecrm-breadcrumbs {
