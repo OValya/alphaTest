@@ -56,17 +56,42 @@
         <div class='pagecrm-btn-phone'></div>
         <div class='pagecrm-btn-question'></div>
     </div>
+    <div class='pagecrm-modal-form pagecrm-hidden'>
+        <div class="pagecrm-modal-form-content">
+            <form action="submit" class="pagecrm-form pagecrm-section-layout">
+                <p class="h1">Форма для заполнения</p>
+                <p>Оставьте свои контактные данные, и мы свяжемся с Вами в течение 20 минут</p>
+                <input name='phone' type="tel" placeholder="Ваш телефон">
+                <input name='email' type="email" placeholder="@Почта*" required>
+                <button class="dark-btn " type="submit">Отправить заявку</button>
+                <checkbox>Нажимая на кнопку, я соглашаюсь с условиями <a
+                        href="#"><span>Политики конфиденциальности</span></a></checkbox>
+            </form>
+        </div>
+    </div>
+    <div class='pagecrm-modal-success-message pagecrm-hidden'>
+        <div class="pagecrm-modal-success-message-content">
+            <button class='pagecrm-close-btn'></button>
+            <div class='pagecrm-success-icon '>
+                <img src="./public/success.svg" alt="success icon">
+            </div>
+            <p class='h2'>
+                Ваша заявка успешно отправлена!
+            </p>
+        </div>
 
+
+    </div>
     <section class="pagecrm-proposal ">
         <div class="pagecrm-section-layout">
-            <p class="title">CRM</p>
+            <h1>CRM</h1>
             <img src="crm.webp" alt="crm benefits image" width="300" height="297">
             <button class="neon-btn blur">Оставить заявку</button>
         </div>
     </section>
     <section class="pagecrm-management">
         <div class="pagecrm-section-layout">
-            <h1>Управление бизнес-процессами</h1>
+            <p class="h1">Управление бизнес-процессами</p>
             <div class="grid-2x2">
                 <div class="pagecrm-card-1">
                     <img src="./public/earphone.svg" alt="communication picture" width="100" height="100">
@@ -130,23 +155,23 @@
     <section class="pagecrm-form-section">
         <div class="pagecrm-form-section-layout">
             <form action="submit" class="pagecrm-form pagecrm-section-layout">
-                <h1>Оставить заявку</h1>
+                <p class="h1">Оставить заявку</p>
                 <p>Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
-                <input type="text" placeholder="ФИО">
-                <input type="text" placeholder="Телефон">
+                <input name="name" type="text" placeholder="ФИО">
+                <input name="phone" type="tel" placeholder="Телефон">
                 <select name="service">
                     <option value="1">Услуга 1</option>
                     <option value="2">Услуга 2</option>
                     <option value="3">Услуга 3</option>
                 </select>
-                <input type="text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"/>
-                <button class="dark-btn">Оставить заявку</button>
+                <input name="question" type="text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"/>
+                <button class="dark-btn wide-btn">Оставить заявку</button>
             </form>
         </div>
 
     </section>
     <section class="pagecrm-helpfully pagecrm-section-layout">
-        <h2>КОМУ ПОЛЕЗНА CRM</h2>
+        <p class="h2">КОМУ ПОЛЕЗНА CRM</p>
         <ul class="pagecrm-helpfully__list">
             <li class="pagecrm-helpfully__item">
                 <p class="pagecrm-helpfully__text"> Любому бизнесу, работающему с клиентской базой </p>
@@ -162,7 +187,7 @@
         </ul>
     </section>
     <section class="pagecrm-section-cases pagecrm-section-layout">
-        <h2>CRM для бизнеса</h2>
+        <p class="h2">CRM для бизнеса</p>
         <p class="subtitle">Наши кейсы</p>
         <div class="pagecrm-card-2 pagecrm-blur">
             <div class="pagecrm-img-container">
@@ -189,82 +214,100 @@
 
     </section>
     <section class="pagecrm-section-cost pagecrm-section-layout">
-        <h2>СТОИМОСТЬ ПОДКЛЮЧЕНИЯ</h2>
+        <p class="h2">СТОИМОСТЬ ПОДКЛЮЧЕНИЯ</p>
         <div class="pagecrm-cost-container">
             <div class="pagecrm-cost-card pagecrm-blur">
                 <div class="pagecrm-cost-card__price">
                     <p class="pagecrm-cost-card__title">Подключение системы CRM</p>
-                    <h2 class="pagecrm-cost-card__text">от 10000 р</h2>
+                    <span class="h2 pagecrm-cost-card__text">от 10000 р</span>
                 </div>
                 <ul class="pagecrm-card-2-list ">
                     <li class="pagecrm-card-2-list__item">Покупка любого тарифа со скидкой</li>
                 </ul>
-                <button class="dark-btn">Заказать</button>
+                <button class="pagecrm-js-order-btn dark-btn image-btn pagecrm-blur">Заказать</button>
             </div>
 
             <div class="pagecrm-cost-card pagecrm-blur">
                 <div class="pagecrm-cost-card__price">
                     <p class="pagecrm-cost-card__title">Подключение системы CRM + настройка</p>
-                    <h2 class="pagecrm-cost-card__text">от 15000 р</h2>
+                    <span class="h2 pagecrm-cost-card__text">от 15000 р</span>
                 </div>
                 <ul class="pagecrm-card-2-list">
                     <li class="pagecrm-card-2-list__item">Покупка любого тарифа со скидкой</li>
                     <li class="pagecrm-card-2-list__item">Индивидуальная настройка системы</li>
                 </ul>
-                <button class="dark-btn">Заказать</button>
+                <button class="pagecrm-js-order-btn  dark-btn image-btn pagecrm-blur">Заказать</button>
             </div>
 
             <div class="pagecrm-cost-card pagecrm-blur ">
                 <div class="pagecrm-cost-card__price">
                     <p class="pagecrm-cost-card__title">Продление лицензий amoCRM и Битрикс24</p>
-                    <h2 class="pagecrm-cost-card__text">от 10000 р</h2>
+                    <span class="h2 pagecrm-cost-card__text">от 10000 р</span>
                 </div>
                 <ul class="pagecrm-card-2-list">
                     <li class="pagecrm-card-2-list__item">Возможность продления лицензий со скидкой от официальных цен
                     </li>
                 </ul>
-                <button class="dark-btn">Заказать</button>
+                <button class=" pagecrm-js-order-btn dark-btn image-btn pagecrm-blur">Заказать</button>
             </div>
         </div>
 
 
     </section>
-    <section class="form-section-2">
-        <h1>Заявка на подбор и подключение CRM-системы </h1>
-        <p class="subtitle">Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем стоимость </p>
-        <form action="submit" class="form section-layout">
-            <h1>Оставить заявку</h1>
-            <p>Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
-            <input type="text" placeholder="ФИО">
-            <input type="text" placeholder="Телефон">
-            <select name="service">
-                <option value="1">Услуга 1</option>
-                <option value="2">Услуга 2</option>
-                <option value="3">Услуга 3</option>
-            </select>
-            <input type="text" placeholder="Напишите что вас интересует, например: Покупка лицензии amoCRM"/>
-            <button class="dark-btn">Оставить заявку</button>
-        </form>
+    <section class="form-section-2 pagecrm-section-layout">
+        <p class="h1">Заявка на подбор и подключение CRM-системы </p>
+        <p class="subtitle pagecrm-gradient-text">Проведем аудит, подготовим решение для вашего бизнеса и рассчитаем
+            стоимость </p>
+        <div class="pagecrm-form-section-layout">
+            <form action="submit" class="pagecrm-form pagecrm-section-layout">
+                <p class="h1">Оставить заявку</p>
+                <p>Выберите систему для вашего бизнеса, и мы свяжемся с Вами в течение 20 минут</p>
+                <input name="name" type="text" placeholder="Имя">
+                <input name="phone" type="tel" placeholder="Телефон">
+                <select name="service">
+                    <option value="1">Выберите услугу</option>
+                    <option value="2">Услуга 2</option>
+                    <option value="3">Услуга 3</option>
+                </select>
+
+                <button class="dark-btn wide-btn">Оставить заявку</button>
+            </form>
+        </div>
     </section>
     <section class="pagecrm-section-partners pagecrm-section-layout">
-        <h2>НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</h2>
+        <p class="h2">НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ</p>
         <img src="all_crm.webp" alt="partners image" width="340">
         <ul>
             <li>Битрикс24 (Управление бизнесом)</li>
             <li>amoCRM (Управление бизнесом)</li>
-
         </ul>
 
     </section>
-    <section class="contacts">
-        <h1>Контакты</h1>
-        <p>Санкт-Петербург </br>
+    <section class="form-section-3 pagecrm-section-layout">
+        <p class="h1">Напишите нам! </p>
+        <p class="subtitlet">Заполните заявку и Мы свяжемся с Вами в течение 15 минут </p>
+        <div class="pagecrm-form-section-layout">
+            <form action="submit" class="pagecrm-form pagecrm-section-layout">
+                <input name="name" type="text" placeholder="Имя*">
+                <input name="email" type="email" placeholder="@Почта*">
+                <input name="phone" type="tel" placeholder="+7 (___) ___-__-__">
+                <input name="question" type="text" placeholder="Задать вопрос"/>
+
+                <button class="dark-btn">Задать вопрос</button>
+            </form>
+        </div>
+    </section>
+    <section class="pagecrm-section-contacts pagecrm-section-layout">
+        <p class="h1">Контакты</p>
+        <p class="h1 pagecrm-adress">Санкт-Петербург </br>
             Заозёрная 8, к.2, офис 202 </br>
             Пн-Пт, 10:00 - 18:00 </br>
             8 (812) 409-52-22 </br>
             info@alpham.pro </br>
         </p>
-
+        <div class="pagecrm-map pagecrm-blur">
+            <img src="map.webp" alt="map image" width="340">
+        </div>
     </section>
 </main>
 <footer class="pagecrm-footer pagecrm-section-layout">
