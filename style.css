@@ -34,12 +34,12 @@ button {
 }
 
 .pagecrm {
-    background: url('/fon_mob_CRM.webp') no-repeat 0 0/cover;
+    background: url('/fon_mob_CRM.webp') no-repeat 0 0/100% 100%;
     min-width: 320px;
     width: 100%;
     overflow-x: hidden;
     margin: 0 auto;
-    padding-bottom:75px ;
+    padding-bottom: 75px;
 }
 
 .pagecrm-breadcrumbs {
@@ -79,9 +79,9 @@ main {
     padding: 35px 0;
 }
 
-.pagecrm-fixed-block{
+.pagecrm-fixed-block {
     position: fixed;
-    right :0;
+    right: 0;
     top: 220px;
     height: 94px;
     width: 48px;
@@ -91,11 +91,12 @@ main {
     border-bottom-left-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content : space-between;
-    align-items: center ;
+    justify-content: space-between;
+    align-items: center;
     z-index: 50;
 }
-.pagecrm-fixed-block:after{
+
+.pagecrm-fixed-block:after {
     content: "";
     position: absolute;
     bottom: 50%;
@@ -107,17 +108,17 @@ main {
 }
 
 .pagecrm-btn-phone,
-.pagecrm-btn-question{
-    width:38px;
+.pagecrm-btn-question {
+    width: 38px;
     padding: 5px;
-    height:100%;
+    height: 100%;
     /*border-bottom: 1px solid blue;*/
-    background:url('./public/phone.svg') center 0px/ 20px 30px no-repeat;
+    background: url('./public/phone.svg') center 0px/ 20px 30px no-repeat;
     filter: drop-shadow(0px 0px 10.6176px #00FFE1) drop-shadow(0px 0px 3.0336px #00FFE1) drop-shadow(0px 0px 1.5168px #00FFE1);
 }
 
-.pagecrm-btn-question{
-    background:url('./public/question.svg') center bottom/ 20px 30px no-repeat;
+.pagecrm-btn-question {
+    background: url('./public/question.svg') center bottom/ 20px 30px no-repeat;
 }
 
 .pagecrm-proposal {
@@ -152,7 +153,7 @@ main {
 }
 
 .pagecrm-blur {
-    filter:  drop-shadow(0px 0px 3.0336px #D795FF) drop-shadow(0px 0px 1.5168px #D795FF);
+    filter: drop-shadow(0px 0px 3.0336px #D795FF) drop-shadow(0px 0px 1.5168px #D795FF);
     /*box-shadow: 0px 0px 10px 0px #D795FF, -0px -0px 10px 0px #D795FF;*/
 }
 
@@ -222,6 +223,20 @@ main {
     margin-right: 10px;
 }
 
+.pagecrm-content,
+.pagecrm-text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.pagecrm-content {
+    padding-top: 12px;
+}
+
+.pagecrm-text-container {
+    row-gap: 10px;
+}
 
 /*.pagecrm-card-2-list{*/
 /*  padding: 10px;*/
@@ -271,8 +286,75 @@ main {
     }
 }
 
+.pagecrm-form-section-2 {
+    .pagecrm-form-section-layout {
+        background: linear-gradient(#B77EFF, #B77EFF) padding-box, linear-gradient(32deg, #FFFFFF 0, #D795FF 52%, #7BC2FE 100%) border-box;
+    }
+
+    .pagecrm-form {
+        row-gap: 17px;
+
+        input,
+        select {
+
+            color: #fff;
+            background: linear-gradient(#B77EFF, #B77EFF) padding-box, linear-gradient(32deg, #FFFFFF 0, #D795FF 52%, #7BC2FE 100%) border-box;
+        }
+    }
+}
+
+.pagecrm-form-section-3 {
+    padding-bottom:7px ;
+    background: url("./public/fon_section.webp") no-repeat 10px 100%/95% 50%;
+
+
+    p {
+        padding: 0 30px;
+    }
+
+    .pagecrm-form-section-layout {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(200px);
+        border-radius: 20px;
+        padding: 22px 18px 11px;
+    }
+
+    .pagecrm-form {
+        row-gap: 17px;
+
+        input,
+        select {
+            padding: 4px 10px;
+            border: rgba(10, 20, 47, 0.3) solid 1px;
+            border-radius: 5px;
+            color: #383838;
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.pagecrm-bordered-list{
+    padding-top: 37px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 54px;
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: #00FFB7 solid 1px;
+        border-top: #00FFB7 solid 1px;
+    }
+    li:after{
+        content: url("arrow-list.svg");
+        transform: translate(-50%, 20%);
+
+    }
+}
+
 .dark-btn {
-    background: linear-gradient(#1E0044, #1E0044) padding-box, linear-gradient(#383FEC, #23FFFF) border-box;
+    background: linear-gradient(#1E0044, #1E0044) padding-box, linear-gradient(90deg, #383FEC, #23FFFF) border-box;
     border: 2px solid transparent;
     padding: 20px 0;
 
@@ -282,9 +364,17 @@ main {
 
 }
 
+.small-btn {
+    border-radius: 10px;
+    padding: 8px 17px;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
 .wide-btn {
     width: 100%;
 }
+
 .image-btn {
     margin: 10px auto 0;
     display: flex;
@@ -292,7 +382,8 @@ main {
     align-items: center;
     column-gap: 10px;
     padding: 20px 50px;
-    &:after{
+
+    &:after {
         content: '';
         display: block;
         width: 15px;
@@ -303,9 +394,8 @@ main {
 }
 
 
-
 .pagecrm-helpfully.pagecrm-section-layout,
-.pagecrm-section-cost.pagecrm-section-layout{
+.pagecrm-section-cost.pagecrm-section-layout {
     row-gap: 45px;
 }
 
@@ -367,7 +457,7 @@ main {
 }
 
 .pagecrm-cost-container,
-.pagecrm-cost-card{
+.pagecrm-cost-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,7 +465,7 @@ main {
     row-gap: 20px;
 }
 
-.pagecrm-cost-card{
+.pagecrm-cost-card {
     width: 100%;
     background: linear-gradient(45deg, #350789, #723DA6);
     border-radius: 15px;
@@ -384,7 +474,7 @@ main {
     align-items: start;
 }
 
-.pagecrm-cost-card__price{
+.pagecrm-cost-card__price {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 115px;
@@ -394,17 +484,17 @@ main {
     padding: 10px 16px 10px 10px;
     border-radius: 10px;
 
-    span{
+    span {
         color: #D795FF;
     }
 }
 
-.pagecrm-map{
+.pagecrm-map {
     width: 100%;
     /*height: 320px;*/
     border-radius: 10px;
 
-    img{
+    img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -426,43 +516,47 @@ main {
     z-index: 100;
     transition: 0.3s left;
 }
+
 .pagecrm-modal-success-message-content,
-.pagecrm-modal-form-content{
+.pagecrm-modal-form-content {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 20px;
-    border-radius:20px;
+    border-radius: 20px;
     padding: 30px;
     background: linear-gradient(#634787, #634787) padding-box, linear-gradient(#383FEC, #23FFFF) border-box;
     border: 2px solid transparent;
-    position: relative ;
+    position: relative;
 }
-.pagecrm-success-icon{
+
+.pagecrm-success-icon {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background: radial-gradient( #A174FF, #E1D3FF);
-    display:flex;
+    background: radial-gradient(#A174FF, #E1D3FF);
+    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 5px #A174FF, 0 0 15px #A174FF, 0 0 30px #A174FF;
-    img{
+
+    img {
         filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 3px #fff);
     }
 }
 
-.pagecrm-close-btn{
+.pagecrm-close-btn {
     border: none;
     background: url("./public/close-btn.svg") center center no-repeat;
     width: 24px;
     height: 24px;
     position: absolute;
     right: 24px;
-    top:24px ;
-    &:hover{
+    top: 24px;
+
+    &:hover {
         cursor: pointer;
         filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 3px #fff);
     }
@@ -509,6 +603,7 @@ main {
 
     .pagecrm-card-2-list {
         padding: 20px;
+
         li {
             padding-top: 20px;
             font-size: 20px;
