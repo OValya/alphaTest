@@ -1,9 +1,193 @@
-@import 'typo.css';
-@import "reset.css";
-@import 'header.css';
-@import 'footer.css';
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.big-title{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.h1{
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.h2{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.subtitle{
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.pagecrm-align-start{
+     text-align: start;
+ }
+
+.color-text{
+    color: #D795FF;
+}
+
+.pagecrm-gradient-text{
+    background: linear-gradient(80deg, #FFFFFF 0, #D795FF 52%, #7BC2FE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pagecrm-space-letter{
+    letter-spacing: 2px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+*:before, a:after{
+    box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:hover  {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+.pagecrm-header{
+    width: 100%;
+    padding: 16px 16px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.pagecrm-header__bottom,
+.pagecrm-header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 17px;
+}
+
+.pagecrm-burger{
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.pagecrm-burger span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(50deg, #D795FF, #7BC2FE);
+}
+
+.pagecrm-burger span:before,
+.pagecrm-burger span:after{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(50deg, #D795FF, #7BC2FE);
+}
+
+.pagecrm-burger span:after{
+    top: 8px;
+}
+
+.pagecrm-search{
+
+    position: relative;
+    width: 280px;
 
 
+
+}
+
+.pagecrm-search__input {
+    /*min-width: 280px;*/
+    width: 100%;
+    height: 25px;
+    padding: 2px 10px 2px 30px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 1000px;
+    background: linear-gradient(#2E335A, #1C1B33) padding-box, linear-gradient(to right, #fff 0%, #9E95FF 52%, #fff 100%) border-box;
+}
+
+.pagecrm-search:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    /*transform: translate(-50%, -50%);*/
+    width: 12px;
+    height: 12px;
+    /*background-color: white;*/
+    background: url("search.svg") no-repeat 0 0/cover;
+    /*z-index: 5;*/
+    /*color: white;*/
+}
+
+.pagecrm-nav,
+.pagecrm-btn{
+    display: none;
+}
+
+.pagecrm-social-media{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.pagecrm-copyrights__text{
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+}
 
 :root {
     --primary-color: #f5f5f5;
@@ -71,7 +255,6 @@ button {
     }
 }
 
-
 main {
     display: flex;
     flex-direction: column;
@@ -131,7 +314,6 @@ main {
     row-gap: 20px;
     padding: 0 10px;
 }
-
 
 .neon-btn {
     outline: none;
@@ -194,7 +376,6 @@ main {
     }
 }
 
-
 .pagecrm-card-2__img {
     position: relative;
     max-width: 170px;
@@ -217,7 +398,6 @@ main {
 .pagecrm-text-container {
     row-gap: 10px;
 }
-
 
 .pagecrm-form-section {
     padding: 0 10px;
@@ -355,7 +535,6 @@ main {
         background: url("/images/Arrow.svg") no-repeat center center/ contain;
     }
 }
-
 
 .pagecrm-helpfully.pagecrm-section-layout,
 .pagecrm-section-cost.pagecrm-section-layout {
@@ -529,7 +708,6 @@ main {
     left: 100%;
     transition: 0.5s;
 }
-
 
 @media (min-width: 640px) {
 
