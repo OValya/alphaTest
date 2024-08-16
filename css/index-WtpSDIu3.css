@@ -218,7 +218,7 @@ button {
 }
 
 .pagecrm {
-    background: url('/images/fon_mob_CRM.webp') no-repeat 0 0/100% 100%;
+    background: url('/alphaTest/images/fon_mob_CRM.webp') no-repeat 0 0/100% 100%;
     min-width: 320px;
     width: 100%;
     overflow-x: hidden;
@@ -295,16 +295,16 @@ main {
     width: 38px;
     padding: 5px;
     height: 100%;
-    background: url('/images/phone.svg') center 0px/ 20px 30px no-repeat;
+    background: url('/alphaTest/images/phone.svg') center 0px/ 20px 30px no-repeat;
     filter: drop-shadow(0px 0px 10.6176px #00FFE1) drop-shadow(0px 0px 3.0336px #00FFE1) drop-shadow(0px 0px 1.5168px #00FFE1);
 }
 
 .pagecrm-btn-question {
-    background: url('/images/question.svg') center bottom/ 20px 30px no-repeat;
+    background: url('/alphaTest/images/question.svg') center bottom/ 20px 30px no-repeat;
 }
 
 .pagecrm-proposal {
-    background: url("/images/line.webp") no-repeat -100px 0/cover;
+    background: url("/alphaTest/images/line.webp") no-repeat -100px 0/cover;
 }
 
 .pagecrm-section-layout {
@@ -368,7 +368,7 @@ main {
         line-height: 14px;
 
         &:before {
-            content: url("/images/check.svg");
+            content: url("/alphaTest/images/check.svg");
             width: 20px;
             height: 20px;
             padding-right: 20px;
@@ -448,7 +448,7 @@ main {
 
 .pagecrm-form-section-3 {
     padding-bottom:7px ;
-    background: url("/images/fon_section.webp") no-repeat 10px 100%/95% 50%;
+    background: url("/alphaTest/images/fon_section.webp") no-repeat 10px 100%/95% 50%;
 
 
     p {
@@ -490,7 +490,7 @@ main {
         border-top: #00FFB7 solid 1px;
     }
     li:after{
-        content: url("/images/arrow-list.svg");
+        content: url("/alphaTest/images/arrow-list.svg");
         transform: translate(-50%, 20%);
 
     }
@@ -532,7 +532,7 @@ main {
         width: 15px;
         height: 15px;
         color: #E9DEFF;
-        background: url("/images/Arrow.svg") no-repeat center center/ contain;
+        background: url("/alphaTest/images/Arrow.svg") no-repeat center center/ contain;
     }
 }
 
@@ -568,7 +568,7 @@ main {
 }
 
 .pagecrm-helpfully__item:before {
-    content: url("/images/Checkbox.svg");
+    content: url("/alphaTest/images/Checkbox.svg");
     width: 40px;
     height: 44px;
     padding-right: 30px;
@@ -691,7 +691,7 @@ main {
 
 .pagecrm-close-btn {
     border: none;
-    background: url("/images/close-btn.svg") center center no-repeat;
+    background: url("/alphaTest/images/close-btn.svg") center center no-repeat;
     width: 24px;
     height: 24px;
     position: absolute;
