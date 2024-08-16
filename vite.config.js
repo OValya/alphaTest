@@ -1,12 +1,14 @@
 
 import { defineConfig } from 'vite';
 export default defineConfig({
+    base:'/alphaTest/',
     build: {
         minify: false,
         terserOptions: {
             compress: false,
             mangle: false,
         },
+
         rollupOptions: {
             output: {
                 chunkFileNames: 'js/[name]-[hash].js',
