@@ -4,7 +4,6 @@
 @import 'footer.css';
 
 
-
 :root {
     --primary-color: #f5f5f5;
     --secondary-color: #f5f5f5;
@@ -28,7 +27,6 @@ button {
 }
 
 .pagecrm-container {
-    max-width: 360px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -51,7 +49,6 @@ button {
 
     a {
         position: relative;
-
         cursor: pointer;
     }
 
@@ -103,7 +100,6 @@ button {
     left: 3px;
     width: 90%;
     height: 1px;
-
     background: #ECECEC;
 }
 
@@ -124,12 +120,21 @@ button {
     background: url("/images/line.webp") no-repeat -100px 0/cover;
 }
 
-.pagecrm-section-layout {
+.pagecrm-section-layout,
+.pagecrm-cases-container,
+.pagecrm-example-container,
+.pagecrm-cost-container,
+.pagecrm-partners-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     row-gap: 20px;
+}
+
+.pagecrm-section-layout,
+.pagecrm-example-section {
     padding: 0 10px;
 }
 
@@ -152,7 +157,7 @@ button {
 .pagecrm-dark-btn:hover,
 .pagecrm-small-btn:hover,
 .pagecrm-wide-btn:hover,
-.pagecrm-image-btn:hover{
+.pagecrm-image-btn:hover {
     cursor: pointer;
     filter: drop-shadow(0px 0px 10px #8BFFFF) drop-shadow(0px 0px 3px #8BFFFF);
     transition: 0.3s all;
@@ -161,6 +166,12 @@ button {
 .pagecrm-blur {
     filter: drop-shadow(0px 0px 5px #D795FF) drop-shadow(0px 0px 2px #D795FF);
 }
+
+.pagecrm-glow {
+    filter: drop-shadow(0px 0px 35px #D795FF) drop-shadow(0px 0px 5px #D795FF) drop-shadow(0px 0px 2px #D795FF);
+
+}
+
 
 .grid-2x2 {
     display: grid;
@@ -176,14 +187,15 @@ button {
     row-gap: 5px;
 }
 
-.pagecrm-card-2 {
+.pagecrm-example-card,
+.pagecrm-cases-card {
     width: 100%;
     border-radius: 10px;
     background: linear-gradient(#480572, #480572) padding-box, linear-gradient(#9400FF, rgba(198, 79, 135, 0.83)) border-box;
     border: 1px solid transparent;
 }
 
-.pagecrm-card-2-list {
+.pagecrm-card-list {
     padding: 10px;
 
     li {
@@ -201,7 +213,7 @@ button {
 }
 
 
-.pagecrm-card-2__img {
+.pagecrm-example-card__img {
     position: relative;
     max-width: 170px;
     width: 50%;
@@ -218,6 +230,7 @@ button {
 
 .pagecrm-content {
     padding-top: 12px;
+    align-items: center;
 }
 
 .pagecrm-text-container {
@@ -263,6 +276,11 @@ button {
         background: linear-gradient(#B77EFF, #B77EFF) padding-box, linear-gradient(32deg, #FFFFFF 0, #D795FF 52%, #7BC2FE 100%) border-box;
     }
 
+    .pagecrm-form-image {
+        display: none;
+    }
+
+
     .pagecrm-form {
         row-gap: 17px;
 
@@ -276,8 +294,15 @@ button {
 }
 
 .pagecrm-form-section-3 {
-    padding-bottom:7px ;
+    padding-bottom: 7px;
     background: url("/images/fon_section.webp") no-repeat 10px 100%/95% 50%;
+
+    .pagecrm-title-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
     p {
@@ -285,6 +310,7 @@ button {
     }
 
     .pagecrm-form-section-layout {
+        width: 75%;
         background: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(200px);
         border-radius: 20px;
@@ -305,20 +331,21 @@ button {
     }
 }
 
-.pagecrm-bordered-list{
+.pagecrm-bordered-list {
     padding-top: 37px;
     width: 100%;
     font-size: 14px;
     line-height: 54px;
 
-    li{
+    li {
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: #00FFB7 solid 1px;
         border-top: #00FFB7 solid 1px;
     }
-    li:after{
+
+    li:after {
         content: url("/images/arrow-list.svg");
         transform: translate(-50%, 20%);
 
@@ -328,7 +355,7 @@ button {
 .pagecrm-dark-btn {
     background: linear-gradient(#1E0044, #1E0044) padding-box, linear-gradient(90deg, #383FEC, #23FFFF) border-box;
     border: 2px solid transparent;
-    padding: 20px 0;
+    padding: 20px 35px;
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 10px;
@@ -407,12 +434,12 @@ button {
     padding-right: 30px;
 }
 
-.pagecrm-section-cases {
-    .pagecrm-card-2 {
-        border-radius: 30px;
-        padding: 33px 33px 26px;
-    }
+
+.pagecrm-cases-card {
+    border-radius: 30px;
+    padding: 33px 33px 26px;
 }
+
 
 .pagecrm-img-container {
     background: linear-gradient(45deg, #1F0B32, #1D1B7A);
@@ -428,19 +455,15 @@ button {
         width: 120px;
         height: 120px;
         object-fit: cover;
+        filter: drop-shadow(0px 0px 5px #D795FF) drop-shadow(0px 0px 2px #D795FF);
     }
 }
 
-.pagecrm-cost-container,
+
 .pagecrm-cost-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 20px;
-}
-
-.pagecrm-cost-card {
+    justify-content: space-between;
     width: 100%;
     background: linear-gradient(45deg, #350789, #723DA6);
     border-radius: 15px;
@@ -454,12 +477,12 @@ button {
     display: grid;
     grid-template-columns: 1fr 115px;
     align-items: center;
-
     background: rgba(158, 0, 255, 0.15);
     padding: 10px 16px 10px 10px;
     border-radius: 10px;
 
     span {
+        text-wrap: nowrap;
         color: #D795FF;
     }
 }
@@ -545,6 +568,7 @@ button {
 
 @media (min-width: 640px) {
 
+
 }
 
 @media (min-width: 980px) {
@@ -558,10 +582,11 @@ button {
         padding: 100px 0;
     }
 
-    h1{
+    h1 {
         font-size: 64px;
         line-height: 89px;
     }
+
     body,
     input,
     select,
@@ -570,24 +595,24 @@ button {
         line-height: 24px;
     }
 
-    .big-title{
+    .big-title {
         font-size: 32px;
         line-height: 40px;
         font-weight: bold;
     }
 
-    .h1{
+    .h1 {
         font-size: 45px;
         line-height: 89px;
         font-weight: bold;
     }
 
-    .h2{
+    .h2 {
         font-size: 36px;
         line-height: 40px;
     }
 
-    .subtitle{
+    .subtitle {
         font-size: 32px;
         line-height: 40px;
         font-weight: bold;
@@ -603,11 +628,8 @@ button {
     /*    width: 652px;*/
     /*    padding: 44px 100px;*/
     /*}*/
-
-
-
-    .pagecrm-logo{
-        img{
+    .pagecrm-logo {
+        img {
             width: 274px;
         }
     }
@@ -617,13 +639,13 @@ button {
     }
 
 
-
     .pagecrm-proposal {
-        img{
+        img {
             width: 705px;
             height: 580px;
             object-fit: cover;
         }
+
         background: url("/images/line.webp") no-repeat 0 0/100% 100%;
     }
 
@@ -644,21 +666,67 @@ button {
     }
 
 
-    .pagecrm-example .pagecrm-section-desktop,
-    .pagecrm-section-cases .pagecrm-section-desktop{
+    .pagecrm-example-container,
+    .pagecrm-cases-container,
+    .pagecrm-cost-container {
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: stretch;
         column-gap: 20px;
     }
 
-    .pagecrm-example
 
-    .pagecrm-helpfully.pagecrm-section-layout{
+    .pagecrm-cost-container {
+
+        flex-wrap: wrap;
+    }
+
+    .pagecrm-cost-card {
+        width: 49%;
+        background: linear-gradient(45deg, #350789, #723DA6);
+        border-radius: 15px;
+        row-gap: 10px;
+        padding: 19px 12px;
+        align-items: start;
+    }
+
+    .pagecrm-cost-card__price {
+        grid-template-columns: 1fr 200px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 20px;
+
+        span {
+            text-wrap: nowrap;
+            color: #D795FF;
+        }
+    }
+
+    /*.pagecrm-cases-container{*/
+    /*    padding: 0;*/
+    /*}*/
+    /*.pagecrm-img-container {*/
+    /*    width: 40%;*/
+    /*    !*min-width: 270px;*!*/
+    /*    row-gap: 10px;*/
+    /*    padding: 25px 0px 15px;*/
+    /*    img {*/
+    /*        width: 120px;*/
+    /*        height: 120px;*/
+    /*        object-fit: cover;*/
+    /*        filter: drop-shadow(0px 0px 5px #D795FF) drop-shadow(0px 0px 2px #D795FF);*/
+    /*    }*/
+    /*    p{*/
+    /*        font-size: 10px;*/
+    /*        line-height: 20px;*/
+    /*        font-weight: bold;*/
+    /*    }*/
+    /*}*/
+    .pagecrm-helpfully.pagecrm-section-layout {
         row-gap: 90px;
     }
 
-    .pagecrm-helpfully{
+    .pagecrm-helpfully {
         background: url("/images/helpfully-bg.webp") no-repeat;
         background-position: right 100px bottom 0;
         background-size: 491px 614px;
@@ -675,19 +743,20 @@ button {
         content: '';
         width: 90px;
         height: 100px;
-        background:  url("/images/Checkbox.svg") no-repeat 0 0/100% 100%;
+        background: url("/images/Checkbox.svg") no-repeat 0 0/100% 100%;
     }
 
-    .pagecrm-helpfully__text{
+    .pagecrm-helpfully__text {
         max-width: 682px;
     }
 
 
-    .pagecrm-card-2 {
+    .pagecrm-example-card {
         border-radius: 20px;
     }
+
     /*pagecrm-example*/
-    .pagecrm-card-2__img {
+    .pagecrm-example-card__img {
         max-width: 345px;
         height: 320px;
         object-fit: cover;
@@ -696,7 +765,7 @@ button {
         margin-right: 20px;
     }
 
-    .pagecrm-card-2-list {
+    .pagecrm-card-list {
         padding: 20px;
 
         li {
@@ -710,4 +779,157 @@ button {
             }
         }
     }
+
+    .pagecrm-big-title{
+        font-size: 48px;
+    }
+
+    .pagecrm-form-section-3 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: end;
+        padding-bottom: 110px;
+        background: url("/images/fon_section.webp") no-repeat 10px 100%/95% 100%;
+
+        .pagecrm-title-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            row-gap: 40px;
+        }
+
+
+        /*p {*/
+        /*    padding: 0 30px;*/
+        /*}*/
+
+        .pagecrm-form-section-layout {
+            width: 55%;
+            max-width: 564px;
+            backdrop-filter: blur(100px);
+            padding: 50px 40px 44px;
+        }
+
+        .pagecrm-form {
+            padding: 0;
+
+            /*input,*/
+            /*select {*/
+            /*    padding: 4px 10px;*/
+            /*    border: rgba(10, 20, 47, 0.3) solid 1px;*/
+            /*    border-radius: 5px;*/
+            /*    color: #383838;*/
+            /*    background: rgba(255, 255, 255, 0.5);*/
+            /*}*/
+        }
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .pagecrm-cases-card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /*align-items: stretch;*/
+        column-gap: 20px;
+    }
+
+    .pagecrm-cases-container {
+        padding: 0;
+    }
+
+    .pagecrm-img-container {
+        width: 40%;
+        /*min-width: 270px;*/
+        row-gap: 10px;
+        padding: 25px 0px 15px;
+
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            filter: drop-shadow(0px 0px 5px #D795FF) drop-shadow(0px 0px 2px #D795FF);
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .pagecrm-content {
+        align-items: start;
+    }
+
+
+    .pagecrm-form-section-2 {
+        .pagecrm-form-section-layout {
+            max-width: 912px;
+            position: relative;
+            background: linear-gradient(#B77EFF, #B77EFF) padding-box, linear-gradient(32deg, #FFFFFF 0, #D795FF 52%, #7BC2FE 100%) border-box;
+            /*background: url("../public/images/form-image.webp") no-repeat 0 0/100% 100%;*/
+        }
+
+        .pagecrm-form-image {
+            display: block;
+            position: absolute;
+            right: -150px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            /*width: 540px;*/
+            /*height: 490px;*/
+        }
+
+        .pagecrm-form {
+            width: 70%;
+            row-gap: 17px;
+
+            input,
+            select {
+
+                color: #fff;
+                background: linear-gradient(#B77EFF, #B77EFF) padding-box, linear-gradient(32deg, #FFFFFF 0, #D795FF 52%, #7BC2FE 100%) border-box;
+            }
+        }
+    }
+
+    .pagecrm-partners-container {
+        gap: 55px;
+        flex-direction: row-reverse;
+
+        img {
+            width: 540px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+    }
+
+    .pagecrm-bordered-list {
+        padding-top: 0;
+        font-size: 36px;
+        line-height: 135px;
+
+        /*li {*/
+        /*    display: flex;*/
+        /*    justify-content: space-between;*/
+        /*    align-items: center;*/
+        /*    border-bottom: #00FFB7 solid 1px;*/
+        /*    border-top: #00FFB7 solid 1px;*/
+        /*}*/
+
+        li:after {
+            content: url("/images/arrow-list.svg");
+            transform: translate(0, 0);
+
+        }
+    }
+
+
 }
