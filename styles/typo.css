@@ -1,14 +1,4 @@
-.play-regular {
-    font-family: "Play", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.play-bold {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
 
 h1{
     font-size: 40px;
@@ -24,7 +14,7 @@ h1{
     text-align: center;
 }
 
-.h1{
+.pagecrm-h1{
     font-size: 24px;
     line-height: 32px;
     text-align: center;
@@ -32,18 +22,18 @@ h1{
 
 
 
-.h2{
+.pagecrm-h2{
     font-size: 20px;
     line-height: 24px;
     font-weight: bold;
     text-align: center;
 }
 
-.uppercase{
+.pagecrm-uppercase{
     text-transform: uppercase;
 }
 
-.subtitle{
+.pagecrm-subtitle{
     font-size: 17px;
     line-height: 20px;
     text-align: center;
@@ -54,7 +44,7 @@ h1{
      text-align: start;
  }
 
-.color-text{
+.pagecrm-color-text{
     color: #D795FF;
 }
 
