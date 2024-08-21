@@ -58,3 +58,9 @@ function orderForm() {
 orderBtns.forEach((btn) => {
   btn.addEventListener("click", orderForm);
 });
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 80)
+    document.querySelector(".pagecrm-header").style.backgroundColor = "#E9DEFF";
+  else
+    document.querySelector(".pagecrm-header").style.backgroundColor = "rgba(29, 1, 65, 0.3)";
+});
