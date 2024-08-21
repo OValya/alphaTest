@@ -9,3 +9,8 @@
     line-height: 12px;
     text-align: center;
 }
+
+.pagecrm-footer-nav,
+.pagecrm-contacts{
+    display: none;
+}
